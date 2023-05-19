@@ -81,9 +81,10 @@ while(continuar == "s" or continuar == "sim" or continuar == "Sim" or continuar 
 
     elif(conta == "Divisão" or conta == "divisão"):
         try:
-
+             num = float(input("\nDigite o primeiro numero:  "))
+             num2 = float(input("\nDigite o segundo numero:  "))
            
-            print(f"\nO resultado da divisão dos numeros é {divisão(num, num2)}")
+             print(f"\nO resultado da divisão dos numeros é {divisão(num, num2)}")
         except ValueError: 
             print("\nVocê deve digitar somente numero, não letras ou simbolos")
         except ZeroDivisionError:
